@@ -1,0 +1,286 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #739072;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Header Styles */
+#content-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+#Topics {
+    background-color: #739072;
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Content Styles */
+#Introduction {
+    padding: 20px;
+    text-align: center; /* Center-align the text */
+    background-color: #c4d1a4;
+}
+
+#Introduction button {
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Introduction button:hover {
+    background-color: #0056b3;
+}
+
+/* Section Styles */
+#section1, #section2, #section3 {
+    padding: 20px;
+    text-align: center; /* Center-align the text */
+}
+
+.section-heading h1 {
+    color: #333;
+    text-align: center; /* Center-align the headings */
+}
+
+/* Flexbox for Picture and Text Alignment */
+.types, .benefits, .tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align flex items horizontally */
+    gap: 20px;
+}
+
+.types img, .benefit img, .tip img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Prevent any unwanted whitespace */
+    transition: transform 0.3s ease;
+}
+
+.types img:hover, .benefit img:hover, .tip img:hover {
+    transform: scale(1.05);
+}
+
+.type, .benefit, .tip {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: justify; /* Align text justify */
+}
+
+.type h2, .benefit h2, .tip h3 {
+    color: #007bff;
+    text-align: center; /* Center-align the headings */
+}
+
+.type p, .benefit p, .tip p {
+    color: #333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #Introduction button {
+        display: block;
+        margin: 10px auto;
+    }
+    .types, .benefits, .tips {
+        flex-direction: column;
+    }
+}
+
+.navbar {
+    background-color: #3e7b59;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between logo and menu */
+    align-items: center; /* Align items vertically */
+    padding: 5px; /* Add padding for spacing */
+}
+
+.logo-section {
+    display: flex; /* Align logo and home link in one row */
+    align-items: center; /* Align items vertically */
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    display: block;
+    max-width: 70%;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.menu a.active {
+    background-color: #4CAF50;
+}
+
+.menu a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #4CAF50;
+    position: relative;
+    top: 5px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 470px) {
+    .menu {
+        float: none;
+        text-align: center;
+        display: none; /* Hide menu items by default on mobile */
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #fff; /* Add borders between menu items */
+    }
+
+    .menu a:last-child {
+        border-bottom: none; /* Remove border from the last menu item */
+    }
+
+    .menu a:last-child {
+        order: 1; /* Move Profile link to the top on mobile */
+    }
+
+    .menu.active {
+        display: block; /* Show menu items when menu is active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle button on mobile */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+  }
+  
+  .footer-text {
+    color: #333;
+    margin-bottom: 10px; /* Add margin to separate text and buttons */
+  }
+  
+  .footer-social ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-social ul li {
+    display: inline;
+  }
+  
+  .footer-social ul li a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .footer-social ul li a:hover {
+    color: #007bff;
+  }
+
+  #backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom */
+    right: 20px; /* Place the button 20px from the right */
+    z-index: 1000; /* Ensure it's above other elements */
+    padding: 4px 12px;
+    background-color: #ffffff; /* Light gray background */
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: black;
+}
+
+#backToTopBtn:hover {
+    background-color: #c7face; /* Light gray on hover */
+}
+.up-arrow{
+    width: 20px;
+    height: 25px;
+}

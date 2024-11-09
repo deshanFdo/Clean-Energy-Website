@@ -1,0 +1,13 @@
+.body-content {
+  margin-left: 70px;
+}
+
+body{
+  background-color: #D9EDBF; 
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+    /* background-color: rgb(162, 152, 152); */
+}

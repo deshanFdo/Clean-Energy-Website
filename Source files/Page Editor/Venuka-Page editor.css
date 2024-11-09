@@ -1,0 +1,49 @@
+/* Resetting default margin and padding for the body */
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center-aligning text content within the body */
+}
+
+/* Styling for italic text */
+i{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace; /* Applying monospace font family */
+}
+
+/* Styling for the main title */
+h3{
+    background-color: #409d78; /* Setting background color */
+    width: 100%; /* Taking full width */
+    height: 80px; /* Setting fixed height */
+    text-align: center; /* Center-aligning text */
+    padding-top: 20px; /* Adding padding at the top */
+    font-size: 50px; /* Setting font size */
+    font-family: 'Courier New', Courier, monospace; /* Applying monospace font family */
+    margin-top: 0%; /* Removing top margin */
+    margin-bottom: 0%; /* Removing bottom margin */
+}
+
+/* Styling for paragraphs and h6 elements */
+p,h6{
+    font-size: 20px; /* Setting font size */
+    text-align: center; /* Center-aligning text */
+    font-family: Courier New, Courier, monospace; /* Applying monospace font family */
+}
+
+/* Styling for anchor links */
+a {
+    font-size: 20px; /* Setting font size */
+    font-family: 'Courier New', Courier, monospace; /* Applying monospace font family */
+    color: #000000; /* Setting text color */
+}
+
+/* Styling for link div containers */
+.link{
+    text-align: center; /* Center-aligning text */
+}
+
+/* Styling for the main page container */
+#page{
+    background-color: #409d78; /* Setting background color */
+}

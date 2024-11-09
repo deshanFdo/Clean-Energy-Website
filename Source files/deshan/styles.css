@@ -1,0 +1,864 @@
+body{
+    margin: 0;
+}
+.about-text {
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Global styles */
+.home_page {
+    font-family: Arial, sans-serif;
+    background-color: #5f9213;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Welcome text styles */
+.welcome-text {
+    color: #1b1d59;
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url('images/main_background.jpg');
+    background-size: cover; /* Adjusts the background image size */
+    background-repeat: no-repeat;
+    background-position-y: 25px;
+}
+
+.welcome-text h1 {
+    padding-top: 80px;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+/* Card styles */
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover img {
+    opacity: 0.7;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #07A081;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+}
+
+/* Testimonials section */
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 22vh;
+    margin: 20px;
+    padding-bottom: 60px;
+}
+.testimonials h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #000000; /* Rich Electric Blue */
+}
+.testimonial {
+    flex-basis: calc(33.33% - 20px);
+    min-height: 22vh;
+    padding: 20px;
+    background-color: #daffb1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    margin: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial strong {
+    font-weight: bold;
+}
+
+.reviewer {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+#about {
+    padding: 20px 20px;
+}
+
+
+
+.about-content {
+    max-width: 1500px;
+    background-color: #daffb1;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    border: 2px solid black;
+}
+
+.about-content:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.731);
+}
+
+.details {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* Key Benefits Section */
+#key-benefits {
+    background-color: #5f9213; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#key-benefits .benefit-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#key-benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.benefit {
+    padding: 20px;
+    background-color: #daffb1; /* Light gray */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-5px);
+}
+
+.benefit h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#shop {
+    background-color: #5f9213; /* Light gray background */
+    padding: 50px 0;
+}
+
+.shop-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.shop-content {
+    background-color: #daffb1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.shop-content:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.731);
+}
+
+.image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.details {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.visit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #70b250;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.visit-button:hover {
+    background-color: #1d6e25; /* Picton Blue */
+}
+
+/* Back to Top button styles */
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom */
+    right: 20px; /* Place the button 20px from the right */
+    z-index: 1000; /* Ensure it's above other elements */
+    padding: 4px 12px;
+    background-color: #ffffff; /* Light gray background */
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: black;
+}
+
+#backToTopBtn:hover {
+    background-color: #c7face; /* Light gray on hover */
+}
+.up-arrow{
+    width: 20px;
+    height: 25px;
+}
+
+.feedback-button {
+    display: block;
+    width: 200px;
+    height: 30px; /* Set the width of the button */
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center; /* Center the text inside the button */
+}
+
+.feedback-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Basic styling for the form */
+.feedback-body{
+    background-color: #f6ffd1;
+    padding-top: 50px;
+}
+
+.feedback-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgb(255, 239, 219);
+}
+
+/* Center form elements except radio buttons */
+form {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-h3 {
+    color: red;
+    margin-top: -10px;
+}
+
+/* Style input fields and textareas */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #121111;
+    border-radius: 4px;
+    text-align: left;
+    background-color: rgb(205, 246, 202);
+}
+
+/* Style submit button */
+input[type="submit"] {
+    background-color: #009CD1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0082a6;
+}
+
+/* Center labels (except radio buttons) */
+label {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2px;
+    margin-bottom: 20px;
+}
+
+#edit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0082a6;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#submit-btn{
+    background-color: #009CD1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#submit-btn:hover {
+    background-color: #1d6e25;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5f9213;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.editor {
+    margin: 0;
+    padding: 0;
+}
+
+.editor-2-heading {
+    background-color: #409d78;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.editor-2-paragraph, .editor-2-small-heading {
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.editor-2-link {
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+.editor-2-container {
+    background-color: #409d78;
+    padding: 20px;
+}
+
+.learn-more-btn:hover {
+    background-color: #a9d18e;
+}
+
+
+.navbar {
+    background-color: #a9d18e;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between logo and menu */
+    align-items: center; /* Align items vertically */
+    position: fixed; /* Fixed position */
+    top: 0; /* Position at the top of the viewport */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    width: 100%;
+}
+.logo-section {
+    display: flex; /* Align logo and home link in one row */
+    align-items: center; /* Align items vertically */
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    display: block;
+    max-width: 70%;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a {
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #82f382;
+}
+
+.menu a.active {
+    background-color: #cef486bd;
+}
+
+.menu a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #4CAF50;
+    position: relative;
+    top: 5px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 470px) {
+    .menu {
+        float: none;
+        text-align: center;
+        display: none; /* Hide menu items by default on mobile */
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #fff; /* Add borders between menu items */
+    }
+
+    .menu a:last-child {
+        border-bottom: none; /* Remove border from the last menu item */
+    }
+
+    .menu a:last-child {
+        order: 1; /* Move Profile link to the top on mobile */
+    }
+
+    .menu.active {
+        display: block; /* Show menu items when menu is active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle button on mobile */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.profile-img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.content-2 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #50623A;
+    text-align: center;
+}
+.content-header {
+    font-size: 32px;
+    color: #DBE7C9;
+    margin-top: 20px;
+}
+.topics {
+    margin-top: 20px;
+}
+.topics h1 {
+    font-size: 24px;
+    color: #4CAF50;
+}
+.introduction {
+    background: #1d6e25;
+    color: #fff;
+    padding: 20px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 20px;
+}
+.introduction h1 {
+    font-size: 40px;
+    font-family: "Rubik Scribble", system-ui;
+}
+.introduction p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.introduction button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #739072;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.introduction button:hover {
+    background-color: #45a049;
+}
+.content-section {
+    background-color: #739072;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.section-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.info-container img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.info-container p {
+    flex: 1;
+}
+.info-container:hover img {
+    transform: scale(1.1);
+}
+.tip-box {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Each box takes one-third of the container */
+    display: inline-block;
+    vertical-align: top;
+    transition: all 0.3s ease;
+}
+.tip-box:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+}
+.tip-box h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.tip-box p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Header Styles */
+
+.navbar {
+    background-color: #3e7b59;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between logo and menu */
+    align-items: center; /* Align items vertically */
+    padding: 5px; /* Add padding for spacing */
+}
+
+.logo-section {
+    display: flex; /* Align logo and home link in one row */
+    align-items: center; /* Align items vertically */
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    display: block;
+    max-width: 70%;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.menu a.active {
+    background-color: #4CAF50;
+}
+
+.menu a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #4CAF50;
+    position: relative;
+    top: 5px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 470px) {
+    .menu {
+        float: none;
+        text-align: center;
+        display: none; /* Hide menu items by default on mobile */
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #fff; /* Add borders between menu items */
+    }
+
+    .menu a:last-child {
+        border-bottom: none; /* Remove border from the last menu item */
+    }
+
+    .menu a:last-child {
+        order: 1; /* Move Profile link to the top on mobile */
+    }
+
+    .menu.active {
+        display: block; /* Show menu items when menu is active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle button on mobile */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+  }
+  
+  .footer-text {
+    color: #333;
+    margin-bottom: 10px; /* Add margin to separate text and buttons */
+  }
+  
+  .footer-social ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-social ul li {
+    display: inline;
+  }
+  
+  .footer-social ul li a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .footer-social ul li a:hover {
+    color: #007bff;
+  }
+
+
+  .connecting-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #64dd17; /* Light Green */
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100vh; /* Ensure body fills the viewport height */
+  }
+
+  /* CSS for styling the links */
+  .topics-container {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 100px;
+    min-height: 70vh;
+  }
+  .topics-container a {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 40px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50; /* Green */
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  .topics-container a:hover {
+    transform: translateY(-3px);
+    background-color: #388e3c; /* Darker Green */
+  }

@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1{
+    color: black;
+    font-family: Bebas Neue, cursive;
+    font-size: 50px;
+    display: grid;
+    place-items: center;
+    height: 10vh;
+    margin-bottom: 20px;
+}
+
+#logo{
+    width: 40%;
+}
+
+#mission{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-bottom: 3%;
+}
+
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+p{
+    font-family: 'poppins', sans-serif;
+    font-size: 40px;
+    place-items: center;
+    margin: 0;
+    font-weight: bold;
+
+}
+
+.mission_text{
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    place-items: center;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+    margin-bottom: 0%;
+}
+
+.rounded-box {
+    background-color: rgba(240, 240, 240, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.loading-image {
+    position: absolute;
+    top:90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 470px) {
+    h1{
+        font-size: 35px;
+        margin-bottom: 20%;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    .mission_text{
+        font-size: 20px;
+        margin-top: 5%;
+    }
+
+    .loading-image{
+        top: 790px;
+    }
+
+    ul{
+        font-size: 15px;
+    }
+
+    #logo{
+        width: 60%;
+    }
+}

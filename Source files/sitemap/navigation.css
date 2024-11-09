@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #3e7b59;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between logo and menu */
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.logo-section {
+    display: flex; /* Align logo and home link in one row */
+    align-items: center; /* Align items vertically */
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    display: block;
+    max-width: 70%;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.menu a.active {
+    background-color: #4CAF50;
+}
+
+.menu a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #4CAF50;
+    position: relative;
+    top: 5px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 470px) {
+    .menu {
+        float: none;
+        text-align: center;
+        display: none; /* Hide menu items by default on mobile */
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #fff; /* Add borders between menu items */
+    }
+
+    .menu a:last-child {
+        border-bottom: none; /* Remove border from the last menu item */
+    }
+
+    .menu a:last-child {
+        order: 1; /* Move Profile link to the top on mobile */
+    }
+
+    .menu.active {
+        display: block; /* Show menu items when menu is active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle button on mobile */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

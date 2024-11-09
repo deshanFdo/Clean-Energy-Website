@@ -1,0 +1,36 @@
+.footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  align-items: center;
+}
+
+.footer-text {
+  color: #333;
+  margin-bottom: 10px; /* Add margin to separate text and buttons */
+}
+
+.footer-social ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social ul li {
+  display: inline;
+}
+
+.footer-social ul li a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-social ul li a:hover {
+  color: #007bff;
+}

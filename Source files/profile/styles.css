@@ -1,0 +1,232 @@
+body {
+    background-image: url('background.jpg');;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+
+#user-profile {
+    margin-top: 20px;
+    border: 1px solid #000;
+    padding: 20px;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+#profile-content {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 10px; /* Adjusted for spacing */
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 50%; /* Set the same width as the user-profile for alignment */
+    height: 20%;
+    background-color: #fff; /* Set background color */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+#profile-prompts {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto; /* Auto margins for horizontal centering */
+    flex-grow: 1; /* Remove the width and margin-left properties as flexbox will handle the sizing */
+}
+
+/* Adjust the size of the input box */
+#profile-prompts input[type="text"] {
+    width: 100%; /* Make the input box full width of the prompt box */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+/* Style for the Prompt label */
+.prompt-label {
+    display: block; /* Make the label a block element */
+    margin-bottom: 5px; /* Add some space below the label */
+    font-weight: bold; /* Make the label text bold */
+}
+
+#progress {
+    width: 100%;
+    background: #fff; /* Changed from #ddd to white */
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden; /* Ensure the inner bar respects the border radius */
+}
+
+#progress-bar {
+    height: 20px;
+    background: #4caf50; /* Set the background color to green */
+    width: 0%; /* Start with an empty progress bar */
+    transition: width 0.3s ease;
+}
+
+
+#progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff; /* Set the filled portion's background color to white */
+    width: var(--progress);
+    transition: width 0.3s ease;
+}
+#progress-container {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#progress-info {
+    margin-bottom: 5px;
+}
+
+#progress-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#profile-completed {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#next-skip-button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%; /* Adds some space above the buttons */
+    margin-top: 20px;
+    flex-direction: row-reverse; /* Reverse the order of the buttons */
+}
+
+.next-button, .skip-button {
+    background-color: #1d6e25; /* Make the buttons blue */
+    color: white; /* Change the text color to white */
+    border: none; /* Remove the default button border */
+    margin: 0 10px; /* Add horizontal margin to separate the buttons */
+    padding: 2% 4%; /* Add some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove the default underline */
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s; /* Add a transition */
+    cursor: pointer; /* Change the cursor when hovering over the button */
+    border-radius: 12px;
+}
+
+.next-button:hover, .skip-button:hover {
+    background-color: #07A081; /* Change the background color when hovered */
+    color: black; /* Change the text color when hovered */
+}
+
+
+#skipped-list {
+    list-style-type: none; /* removes bullet points */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px; 
+}
+
+#prompt-and-input-container {
+    display: flex;
+    align-items: center;
+}
+
+#prompt-label {
+    margin-right: 2%; /* Space between the label and the input box */
+    font-weight: bold;
+}
+
+#category-div {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#skipped-list li {
+    cursor: pointer; /* indicates the items are clickable */
+    margin: 0.5%;
+    padding: 1% 2%;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; /* Add a background color */
+    color: #000; /* Change the text color */
+    font-size: 0.8rem;
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Add a transition for a smooth color change */
+    max-height: 200px;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+#skipped-list li:hover {
+    background-color: #ddd; /* Change the background color when hovered */
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    body {
+        justify-content: flex-start;
+        padding-top: 50px; /* Add some space at the top on mobile */
+        height: auto; /* Allow body to stretch to fit content */
+    }
+
+    #user-profile, #profile-content, #progress-container, #profile-prompts {
+        width: 90%; /* Take up more screen width on smaller screens */
+        max-width: none; /* Override the max-width */
+    }
+
+    #profile-content {
+        max-height: 150px; /* Larger max-height for visibility */
+    }
+
+    #prompt-and-input-container, #next-skip-button-container, #progress-bar {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch; /* Stretch to fit container width */
+    }
+
+    #prompt-label, .next-button, .skip-button, #skipped-list li {
+        font-size: larger; /* Increase font size for readability */
+    }
+
+    .next-button, .skip-button {
+        padding: 15px; /* Increase padding for larger touch targets */
+        margin: 10px 0; /* Add space around buttons */
+    }
+
+    #skipped-list {
+        justify-content: space-around; /* Space list items nicely */
+        padding-bottom: 20px; /* Add space at the bottom */
+    }
+
+    #skipped-list li {
+        margin: 5px; /* Reduce margin to fit smaller screens */
+    }
+
+    /* Adjust the progress bar height */
+    #progress-bar {
+        height: 25px;
+    }
+}

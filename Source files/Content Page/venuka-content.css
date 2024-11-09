@@ -1,0 +1,326 @@
+/* Setting basic styling for the body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; /* Using flexbox layout */
+    flex-direction: column; /* Setting flex direction to column */
+    background-color: #50623A; /* Setting background color */
+    color: #fff; /* Setting text color */
+}
+
+/* Styling for main headings */
+h1 {
+    text-align: center; /* Center-aligning text */
+    font-size: 40px; /* Setting font size */
+}
+
+/* Styling for the content header */
+#content-header {
+    background: #DBE7C9; /* Setting background color */
+    color: #000000; /* Setting text color */
+    text-align: center; /* Center-aligning text */
+    padding: 20px; /* Adding padding */
+    margin: 0; /* Removing margin */
+    font-family: "Pacifico", cursive; /* Applying specific font family */
+}
+
+/* Styling for the 'Topics' section */
+#Topics {
+    background-color: #739072; /* Setting background color */
+    color: #fff; /* Setting text color */
+    text-align: center; /* Center-aligning text */
+    padding: 20px; /* Adding padding */
+    margin: 0; /* Removing margin */
+    font-family: "Hind", sans-serif; /* Applying specific font family */
+    font-size: 20px; /* Setting font size */
+}
+
+/* Styling for the 'Introduction' section */
+#Introduction h1 {
+    font-size: 40px; /* Setting font size */
+    font-family: "Rubik Scribble", system-ui; /* Applying specific font family */
+}
+
+#Introduction {
+    background: #294B29; /* Setting background color */
+    color: #fff; /* Setting text color */
+    text-align: center; /* Center-aligning text */
+    padding: 20px; /* Adding padding */
+    margin: 0; /* Removing margin */
+    font-family: "Bebas Neue", cursive; /* Applying specific font family */
+    font-size: 20px; /* Setting font size */
+}
+
+/* Styling for the types of clean energy */
+#types {
+    display: flex; /* Using flexbox layout */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+    height: 100%; /* Setting height */
+    font-family: "Hind", sans-serif; /* Applying specific font family */
+}
+
+.types {
+    width: 300px; /* Setting width */
+    margin: 70px 10px; /* Setting margin */
+    padding: 20px; /* Adding padding */
+    border: 1px solid #ccc; /* Adding border */
+    border-radius: 8px; /* Adding border radius */
+    background-color: #789461; /* Setting background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    flex: 1; /* Allowing flexible sizing */
+}
+
+/* Styling for type images */
+.types img {
+    display: block; /* Making the image a block element */
+    margin: 0 auto; /* Center-aligning the image */
+    width: 100%; /* Setting width */
+    border-radius: 8px 8px 0 0; /* Adding border radius */
+}
+
+/* Styling for type information */
+.types .info {
+    padding: 20px; /* Adding padding */
+    text-align: center; /* Center-aligning text */
+}
+
+.types h2 {
+    font-size: 20px; /* Setting font size */
+    margin-bottom: 10px; /* Adding margin */
+}
+
+.types p {
+    font-size: 16px; /* Setting font size */
+    line-height: 1.5; /* Setting line height */
+}
+
+/* Styling for buttons */
+button {
+    background-color: #739072; /* Setting background color */
+    color: #000000; /* Setting text color */
+    font-weight: bolder; /* Setting font weight */
+    border: none; /* Removing border */
+    padding: 8px 12px; /* Adding padding */
+    border-radius: 4px; /* Adding border radius */
+    cursor: pointer; /* Setting cursor style */
+    width: 50%; /* Setting width */
+    margin-top: 20px; /* Adding margin */
+}
+
+button:active {
+    background-color: #D2E3C8; /* Setting background color when button is active */
+}
+
+/* Styling for specific sections */
+/* Environmental Preservation section */
+#Environmental-Preservation h2{
+    font-family: "Merienda", cursive; /* Applying specific font family */
+}
+
+#Environmental-Preservation {
+    display: flex; /* Using flexbox layout */
+    align-items: center; /* Center-aligning items vertically */
+    margin-top: 20px; /* Adding margin */
+    margin-left: 20px; /* Adding margin */
+    font-family: "Hind", sans-serif; /* Applying specific font family */
+    font-size: 20px; /* Setting font size */
+}
+
+#Environmental-Preservation-image {
+    margin-right: 2%; /* Adding margin */
+    margin-left: 5%; /* Adding margin */
+    flex: 0 0 40%; /* Setting flex */
+}
+
+#Environmental-Preservation-image img {
+    width: 80%; /* Setting width */
+}
+
+#Environmental-Preservation-text {
+    flex: 1; /* Allowing flexible sizing */
+}
+
+/* Cost Savings section */
+#Cost-Savings h2{
+    font-family: "Merienda", cursive; /* Applying specific font family */
+}
+
+#Cost-Savings {
+    display: flex; /* Using flexbox layout */
+    align-items: center; /* Center-aligning items vertically */
+    margin-top: 20px; /* Adding margin */
+    font-family: "Hind", sans-serif; /* Applying specific font family */
+    font-size: 20px; /* Setting font size */
+}
+
+#Cost-Savings-image {
+    flex: 0 0 40%; /* Setting flex */
+}
+
+#Cost-Savings-image img {
+    width: 70%; /* Setting width */
+    margin-left: 20%; /* Adding margin */
+}
+
+#Cost-Savings-text {
+    flex: 1; /* Allowing flexible sizing */
+}
+
+/* Energy Security section */
+#Energy-Security h2{
+    font-family: "Merienda", cursive; /* Applying specific font family */
+}
+
+#Energy-Security {
+    display: flex; /* Using flexbox layout */
+    align-items: center; /* Center-aligning items vertically */
+    font-family: "Hind", sans-serif; /* Applying specific font family */
+    font-size: 20px; /* Setting font size */
+    margin-top: 20px; /* Adding margin */
+    margin-left: 20px; /* Adding margin */
+}
+
+#Energy-Security-image {
+    margin-left: 5%; /* Adding margin */
+    flex: 0 0 40%; /* Setting flex */
+}
+
+#Energy-Security-image img {
+    width: 80%; /* Setting width */
+}
+
+#Energy-Security-text {
+    flex: 1; /* Allowing flexible sizing */
+}
+
+/* Job Creation section */
+#Job-Creation h2{
+    font-family: "Merienda", cursive; /* Applying specific font family */
+}
+
+#Job-Creation {
+    display: flex; /* Using flexbox layout */
+    align-items: center; /* Center-aligning items vertically */
+    margin-top: 20px; /* Adding margin */
+    font-family: "Hind", sans-serif; /* Applying specific font family */
+    font-size: 20px; /* Setting font size */
+}
+
+#Job-Creation-image {
+    flex: 0 0 40%; /* Setting flex */
+}
+
+#Job-Creation-image img {
+    width: 70%; /* Setting width */
+    margin-left: 20%; /* Adding margin */
+}
+
+#Job-Creation-text {
+    flex: 1; /* Allowing flexible sizing */
+}
+
+/* Styling for heading */
+.heading h1{
+    font-size: 40px; /* Setting font size */
+    font-family: "Rubik Scribble", system-ui; /* Applying specific font family */
+}
+
+.heading {
+    margin-top: 20px; /* Adding margin */
+    text-align: center; /* Center-aligning text */
+    background-color: #294B29; /* Setting background color */
+    font-family: "Bebas Neue", cursive; /* Applying specific font family */
+    font-size: 20px; /* Setting font size */
+}
+
+/* Styling for wrapper */
+.wrapper {
+    display: flex; /* Using flexbox layout */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+    height: 300px; /* Setting height */
+}
+
+/* Styling for container */
+.container {
+    width: 70%; /* Setting width */
+    height: 60%; /* Setting height */
+    padding: 10px; /* Adding padding */
+    border: 3px solid #ffffff; /* Adding border */
+    border-radius: 10px; /* Adding border radius */
+    margin: 0 10px; /* Adding margin */
+    transition: transform 0.3s ease; /* Adding transition effect */
+}
+
+.container:hover {
+    transform: scale(1.1); /* Scaling container on hover */
+}
+
+.container h3 , p {
+    text-align: center; /* Center-aligning text */
+    font-family: "Hind", sans-serif; /* Applying specific font family */
+}
+
+/* Styling for successful stories */
+#successful-stories{
+    text-align: center; /* Center-aligning text */
+    font-family: "Hind", sans-serif; /* Applying specific font family */
+    font-size: 17px; /* Setting font size */
+    margin: 20px auto; /* Adding margin */
+    width: 90%; /* Setting width */
+    display: flex; /* Using flexbox layout */
+    flex-wrap: wrap; /* Allowing wrapping */
+    justify-content: center; /* Centering content horizontally */
+}
+
+/* Styling for story boxes */
+.box {
+    width: calc(30% - 40px); /* Setting width */
+    margin: 20px; /* Adding margin */
+    height: 500px; /* Setting height */
+    background-color: #789461; /* Setting background color */
+    padding: 20px; /* Adding padding */
+    position: relative; /* Setting position */
+    transition: all 0.3s ease; /* Adding transition effect */
+    overflow: hidden; /* Hiding overflow */
+    display: flex; /* Using flexbox layout */
+    flex-direction: column; /* Setting flex direction to column */
+    align-items: center; /* Center-aligning items vertically */
+    cursor: pointer; /* Setting cursor style */
+    box-sizing: border-box; /* Including padding and border in the element's total width and height */
+    border-radius: 10px; /* Adding border radius */
+}
+
+.box .content {
+    position: absolute; /* Setting position */
+    top: 23%; /* Setting position */
+    margin: 3%; /* Adding margin */
+    height: auto; /* Setting height */
+}
+
+/* Media query for responsive design */
+@media (max-width: 767px) {
+    #product-body, #basket-body, #customer-details-body, #Order-summary-body {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    #product-text h2, #basket-text p{
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    #basket-text h2, #basket-text p {
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    #customer-details-text h2, #customer-details-text p {
+        margin-right: 0px;
+        text-align: center;
+    }
+
+}
