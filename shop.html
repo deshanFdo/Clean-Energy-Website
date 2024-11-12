@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Source%20files/Shop/shop.css">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<header>
+    <div class="navbar">
+        <div class="logo-section">
+            <div class="logo">
+                <a href="home.html"><img src="Images/Shop/desktop-logo.png" alt="Desktop Logo" class="desktop-logo"></a>
+            </div>
+        </div>
+        <div class="menu-section">
+            <div class="menu">
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="team.html">Team</a>
+                <a href="profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+            </div>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </div>
+</header>
+    <div class="container">
+        <div class="items-container">
+            <i id="basket-mobile" class="basket-mobile"><img src="Images/Shop/cart.png" alt="cart"></i>
+            <h1>Shop</h1>
+            <form class="Product-filter">
+                <select id="filter" name="filter" onchange="hideProducts()">
+                    <option value="1">All Products</option>
+                    <option value="2">Solar Energy Products</option>
+                    <option value="3">Wind Energy Products</option>
+                    <option value="4">Energy-Efficient Appliances</option>
+                    <option value="5">Energy Storage Solutions</option>
+                </select>
+                </form>
+            <div class="products">
+                <div class="item" id="solar_panel">
+                    <img src="Images/Shop/solar_panel.jpg" alt="solar panel">
+                    <h3 data-name="Solar Panel">Solar Panels</h3>
+                    <p data-price="500">$500</p>
+                    <button onclick="addToCart('solar_panel')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_solar_panel" name="quantity_solar_panel">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item" id="solar_power_controller">
+                    <img src="Images/Shop/solar_power_controller.png" alt="solar power controller">
+                    <h3 data-name="Solar Power Controller">Solar Power Controllers</h3>
+                    <p data-price="100">$100</p>
+                    <button onclick="addToCart('solar_power_controller')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_solar_power_controller" name="quantity_solar_power_controller">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item" id="solar_power_inverter">
+                    <img src="Images/Shop/Solar_power_inverter.png" alt="solar power inverter">
+                    <h3 data-name="Solar Power Inverter">Solar Power Inverter</h3>
+                    <p data-price="200">$200</p>
+                    <button onclick="addToCart('solar_power_inverter')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_solar_power_inverter" name="quantity_solar_power_inverter">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item" id="solar_power_meter">
+                    <img src="Images/Shop/solar_power_meter.png" alt="solar power meter">
+                    <h3 data-name="Solar Power Meters">Solar Power Meters</h3>
+                    <p data-price="300">$300</p>
+                    <button onclick="addToCart('solar_power_meter')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_solar_power_meter" name="quantity_solar_power_meter">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>                
+                <div class="item" id="wind_turbine">
+                    <img src="Images/Shop/Wind_turbine.png" alt="Wind turbine">
+                    <h3 data-name="Turbines for Residential use">Turbines for Residential use</h3>
+                    <p data-price="400">$400</p>
+                    <button onclick="addToCart('wind_turbine')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_wind_turbine" name="quantity_wind_turbine">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item" id="wind_controller">
+                    <img src="Images/Shop/Wind_controller.png" alt="Wind Controller">
+                    <h3 data-name="Turbines Controller">Turbines Controller</h3>
+                    <p data-price="200">$200</p>
+                    <button onclick="addToCart('wind_controller')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_wind_controller" name="quantity_wind_controller">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item" id="wind_inverter">
+                    <img src="Images/Shop/Wind_power_inverter.png" alt="Wind power inverter">
+                    <h3 data-name="Wind Power Inverter">Wind Power Inverter</h3>
+                    <p data-price="500">$500</p>
+                    <button onclick="addToCart('wind_inverter')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_wind_inverter" name="quantity_wind_inverter">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item" id="bulb">
+                    <img src="Images/Shop/bulb.png" alt="bulb">
+                    <h3 data-name="Energy-efficient LED Bulb">Energy-efficient LED Bulb</h3>
+                    <p data-price="10">$10</p>
+                    <button onclick="addToCart('bulb')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_bulb" name="quantity_bulb">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item" id="refrigerator">
+                    <img src="Images/Shop/refrigerator.png" alt="refrigerator">
+                    <h3 data-name="Energy-efficient refrigerator">Energy-efficient refrigerator</h3>
+                    <p data-price="200">$200</p>
+                    <button onclick="addToCart('refrigerator')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_refrigerator" name="quantity_refrigerator">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item" id="washing_machine">
+                    <img src="Images/Shop/washing_machine.png" alt="washing machine">
+                    <h3 data-name="Energy-efficient washing machine">Energy-efficient washing machine</h3>
+                    <p data-price="700">$700</p>
+                    <button onclick="addToCart('washing_machine')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_washing_machine" name="quantity_washing_machine">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item" id="battery">
+                    <img src="Images/Shop/battery.png" alt="battery">
+                    <h3 data-name="Solar battery storage system">Solar battery storage system</h3>
+                    <p data-price="500">$500</p>
+                    <button onclick="addToCart('battery')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_battery" name="quantity_battery">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item" id="backup">
+                    <img src="Images/Shop/battery%20backup.png" alt="battery backup">
+                    <h3 data-name="Backup Power System">Backup Power System</h3>
+                    <p data-price="90">$90</p>
+                    <button onclick="addToCart('backup')">Add to cart</button>
+                    <p class="q-name">Quantity:</p>
+                    <form class="quantity">
+                        <select id="quantity_backup" name="quantity_backup">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Basket</h2>
+            <div class="cart-items">
+            </div>
+            <button class="clear-btn" onclick="clearCart()">Clear basket</button><br>
+            <p class="total-container">Total: $
+            <p class="total">0</p>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <div id="customer_details" style="display:none;">
+        <div id="details_heading">
+            <h1>Almost there...</h1>
+            <h2>Fill in the details below to complete your order</h2>
+        </div>
+        <div class="Payment-data-container">
+        <div id="form" class="payment-page">
+            <h2 style="text-align:center">Customer Details</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX"><br>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address"><br>
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city"><br>
+                <label for="postcode">Postcode:</label><br>
+                <input type="number" id="postcode" name="postcode"><br>
+                <label for="country">Country:</label><br>
+                <input type="text" id="country" name="country"><br>
+            </form>
+
+        <h2 style="text-align:center">Payments Details</h2>
+            <form>
+                <label for="card_number">Card number:</label><br>
+                <input type="text" id="card_number" name="card_number"><br>
+                <label for="expiry_date">Expiry date:</label><br>
+                <input type="text" id="expiry_date" name="expiry_date" pattern="(0[1-9]|1[0-2])\/\d{2}" placeholder="MM/YY" required><br>
+                <label for="cvc">CVC:</label><br>
+                <input type="number" id="cvc" name="cvc"><br>
+                <label for="cardholder_name">Cardholder name:</label><br>
+                <input type="text" id="cardholder_name" name="cardholder_name"><br>
+                <button type="button" id="save" onclick="save()">Place Order</button>
+            </form>
+        </div>
+        <div id="order_details" class="payment-page order_details">
+            <h2>Order Summary</h2>
+        </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-text">
+                <p>This website was created by <a href="Venuka-Page%20Editor.html">Venuka Siriwardena</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Source%20files/Shop/shop.js"></script>
+    </body>
+</html>

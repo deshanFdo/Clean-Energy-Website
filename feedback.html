@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
+<link rel="stylesheet" href="Source files/deshan/styles.css">
+</head>
+<body class="feedback-body">
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="navigation.css">
+        <div class="navbar">
+            <div class="logo-section">
+                <div class="logo">
+                    <a href="home.html"><img src="Source files/deshan/images/desktop-logo.png" alt="Desktop Logo" class="desktop-logo"></a>
+                </div>
+            </div>
+            <div class="menu-section">
+                <div class="menu">
+                    <a href="home.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="sitemap.html">Sitemap</a>
+                    <a href="team.html">Team</a>
+                    <a href="profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+                </div>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="feedback-container">
+        <h1>Feedback Form</h1>
+        <form id="feedback-form" onsubmit="return false;">
+            <h3 class="form-h3">Required fields *</h3>
+            <label for="name">*Enter your name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">*Enter your email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label>Was this your first time visiting?</label><br>
+            <input type="radio" id="first-time-yes" name="first-time" value="yes">
+            <label for="first-time-yes">Yes</label>
+            <input type="radio" id="first-time-no" name="first-time" value="no">
+            <label for="first-time-no">No</label><br>
+
+            <label>Was this website informative and easy to navigate through?</label><br>
+            <input type="radio" id="informative-yes" name="informative" value="yes" required>
+            <label for="informative-yes">Yes</label>
+            <input type="radio" id="informative-no" name="informative" value="no">
+            <label for="informative-no">No</label><br>
+
+            <label for="improvements">*If "No", suggest any improvements for the future:</label><br>
+            <textarea id="improvements" name="improvements" rows="4"></textarea><br>
+
+            <label>How satisfied are you with our service? Choose from 0 to 10, with 1 being "Not satisfied at all!" and 10 being "Extremely satisfied!" </label><br>
+            <input type="radio" id="satisfaction-1" name="satisfaction" value="1">
+            <label for="satisfaction-1">1</label>
+            <input type="radio" id="satisfaction-2" name="satisfaction" value="2">
+            <label for="satisfaction-2">2</label>
+            <input type="radio" id="satisfaction-3" name="satisfaction" value="3">
+            <label for="satisfaction-3">3</label>
+            <input type="radio" id="satisfaction-4" name="satisfaction" value="4">
+            <label for="satisfaction-4">4</label>
+            <input type="radio" id="satisfaction-5" name="satisfaction" value="5">
+            <label for="satisfaction-5">5</label>
+            <input type="radio" id="satisfaction-6" name="satisfaction" value="6">
+            <label for="satisfaction-6">6</label>
+            <input type="radio" id="satisfaction-7" name="satisfaction" value="7">
+            <label for="satisfaction-7">7</label>
+            <input type="radio" id="satisfaction-8" name="satisfaction" value="8">
+            <label for="satisfaction-8">8</label>
+            <input type="radio" id="satisfaction-9" name="satisfaction" value="9">
+            <label for="satisfaction-9">9</label>
+            <input type="radio" id="satisfaction-10" name="satisfaction" value="10">
+            <label for="satisfaction-10">10</label>
+
+            <label>Would you recommend our services?</label><br>
+            <input type="radio" id="recommend-yes" name="recommend" value="yes">
+            <label for="recommend-yes">Yes</label>
+            <input type="radio" id="recommend-no" name="recommend" value="no">
+            <label for="recommend-no">No</label><br>
+
+            <label for="receive-updates">*Would you like to receive updates about the website and any offers?</label><br>
+            <select id="receive-updates" name="receive-updates" required>
+                <option value="" disabled selected>Select an option</option> 
+                <option value="yes">Yes, via email</option>
+                <option value="no">No</option>
+            </select><br><br>
+
+            <label for="additional-questions">Do you have any additional questions or requests ?</label><br>
+            <textarea id="additional-questions" name="additional-questions" rows="4"></textarea><br>
+
+            <input type="submit" value="Submit" id="initial-submit-btn">
+        </form>
+
+        <!-- Summary page -->
+        <div class="summary" id="summary" style="display: none;">
+            <h2>Review Your Feedback</h2>
+            <p><strong>Name:</strong> <span id="summaryName"></span></p>
+            <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
+            <p><strong>First Time Visiting:</strong> <span id="summaryFirstTime"></span></p>
+            <p><strong>Informative and Easy to Navigate:</strong> <span id="summaryInformative"></span></p>
+            <p><strong>Improvements:</strong> <span id="summaryImprovements"></span></p>
+            <p><strong>Satisfaction:</strong> <span id="summarySatisfaction"></span></p>
+            <p><strong>Recommend:</strong> <span id="summaryRecommend"></span></p>
+            <p><strong>Receive Updates:</strong> <span id="summaryReceiveUpdates"></span></p>
+            <p><strong>Additional Questions:</strong> <span id="summaryAdditionalQuestions"></span></p>
+            <button id="submit-btn">Submit</button>
+            <button id="edit-btn">Back to Edit</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-text">
+                <p>This website was created by <a href="deshan.html">Deshan Fernando</a>.</p>
+            </div>
+        </div>
+    </footer>
+    
+        
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><img src="Source files/deshan/images/up-arrow.png" class="up-arrow" alt="up-arrow"></button>
+    
+    <script src="Source files/deshan/script.js"></script>
+</body>
+</html>

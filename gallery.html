@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>Gallery</title>
+  <!-- External CSS files -->
+  <link rel="stylesheet" href="Source files/gallery/Web Gallery.css">
+  <link rel="stylesheet" href="Source files/gallery/navigation.css">
+  <link rel="stylesheet" href="Source files/gallery/footer.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind:wght@300;400;500;600;700&family=Merienda:wght@300..900&family=Pacifico&family=Rubik+Scribble&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <div class="logo-section">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="home.html"><img src="Source files/deshan/images/desktop-logo.png" alt="Desktop Logo" class="desktop-logo"></a>
+        </div>
+      </div>
+      <div class="menu-section">
+        <!-- Menu links -->
+        <div class="menu">
+          <a href="home.html">Home</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="shop.html">Shop</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="team.html">Team</a>
+          <a href="profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+        </div>
+        <!-- Menu toggle button for mobile -->
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content section -->
+  <div class="container">
+    <!-- Gallery title -->
+    <div class="gallery-content-0">
+      <h1>Welcome to Our Gallery</h1>
+    </div>
+
+    <!-- Gallery images -->
+    <div class="gallery-content">
+      <div class="gallery">
+        <!-- Individual image thumbnails -->
+        <div class="thumbnail" onclick="expandThumbnail(this)">
+          <img src="Source files/gallery/logo2.jpg" alt="Image 1" tabindex="0" data-description="This image portrays a vision of a sustainable future powered by renewable energy. It features a stylized Earth, adorned with symbols of clean energy sources like wind turbines, solar panels, and lush greenery. The image serves as a powerful reminder of our responsibility to harness renewable energy sources such as Wind, Hydropower, Solar, Biomass, and Geothermal for a sustainable future."/>
+          <div class="overlay"><p><h2>Energy Sources </h2><br><br><br>Click For Details</p></div>
+        </div>
+        <!-- More thumbnails -->
+        <!-- Thumbnail 2 -->
+        <div class="thumbnail" onclick="expandThumbnail(this)">
+          <img src="Source files/gallery/logo5.JPG" alt="Image 2" tabindex="0" data-description="This image presents a compelling contrast between wind energy and oil extraction. On one side, a wind turbine stands against a greenish backdrop, symbolizing the clean, renewable energy that wind power provides. On the other side, an oil pump jack is silhouetted against an orange background, representing the traditional fossil fuel extraction process. The image serves as a stark reminder of the environmental impacts of our energy choices and underscores the importance of transitioning to renewable sources such as wind energy."/>
+          <div class="overlay"><p><h2>Energy Contrast</h2><br><br><br>Click For Details</p></div>
+        </div>
+        <!-- Thumbnail 3 -->
+        <div class="thumbnail" onclick="expandThumbnail(this)">
+          <img src="Source files/gallery/logo3.jpg" alt="Image 3" tabindex="0" data-description="The image is a powerful representation of clean energy. The light bulb with a plant growing inside it symbolizes the idea of sustainable growth and innovation in the field of clean energy. The various icons surrounding the bulb represent different aspects of clean energy and sustainability, including wind energy, solar power, water conservation, and more. This image beautifully illustrates the potential of clean energy sources in powering our future in a sustainable way."/>
+          <div class="overlay"><p><h2>Clean Energy</h2><br><br><br>Click For Details</p></div>
+        </div>
+        <!-- Thumbnail 4 -->
+        <div class="thumbnail" onclick="expandThumbnail(this)">
+          <img src="Source files/gallery/logo4.jpg" alt="Image 4" tabindex="0" data-description="The image presents a vast expanse of solar panels, bathed in sunlight. These panels, designed to convert sunlight into electricity, represent the essence of renewable energy. Solar power, with its renewable nature and zero emission characteristic, plays a crucial role in our transition towards cleaner energy sources. This image underscores the significant potential of solar energy in shaping our energy landscape."/>
+          <div class="overlay"><p><h2>Solar Potential</h2><br><br><br>Click For Details</p></div>
+        </div>
+        <!-- Thumbnail 5 -->
+        <div class="thumbnail" onclick="expandThumbnail(this)">
+          <img src="Source files/gallery/logo8.jpg" alt="Image 5" tabindex="0" data-description="Wind turbines are a cornerstone in the pursuit of clean energy. They harness the power of the wind, converting kinetic energy into mechanical power, and ultimately electricity. This process is entirely clean, producing no harmful emissions or pollutants. Unlike fossil fuels, wind is a renewable resource, making it a sustainable and environmentally friendly solution for energy production. The use of wind turbines for energy generation significantly reduces our reliance on fossil fuels, helping to mitigate the impacts of climate change and promote a healthier planet."/>
+          <div class="overlay"><p><h2>Wind Power</h2><br><br><br>Click For Details</p></div>
+        </div>
+        <!-- Thumbnail 6 -->
+        <div class="thumbnail" onclick="expandThumbnail(this)">
+          <img src="Source files/gallery/logo10.jpg" alt="Image 6" tabindex="0" data-description="Wind turbines and solar panels, key players in harnessing renewable energy, are prominently featured. These technologies convert wind and solar power into electricity, reducing our dependence on fossil fuels and contributing to cleaner air. The role of hydrogen (H2) in green and renewable energy is also underscored. Hydrogen, when used in fuel cells, can generate electricity with water being the only by-product, making it a clean energy carrier. The hydrogen can be produced using electricity generated from renewable sources like wind and solar, making the entire process sustainable and environmentally friendly. This serves as a powerful visual metaphor for the significant potential of wind energy, solar power, and hydrogen in transforming our energy systems towards sustainability and reducing environmental impact."/>
+          <div class="overlay"><p><h2>"Renewable Harmony"</h2><br><br><br>Click For Details</p></div>
+        </div>
+        <!-- Thumbnail 7 -->
+        <div class="thumbnail" onclick="expandThumbnail(this)">
+          <img src="Source files/gallery/logo7.jpg" alt="Image 7" tabindex="0" data-description="The image metaphorically illustrates the economic benefits of clean energy. The light bulb with a plant growing inside symbolizes the innovative idea of clean energy, while the stacks of coins represent the financial growth that can be achieved through such investments. Clean energy technologies like wind turbines and solar panels, not only contribute to environmental sustainability, but also stimulate economic growth. They create jobs, reduce energy costs, and foster technological innovation. Moreover, by reducing our dependence on fossil fuels, they help mitigate the financial volatility associated with fossil fuel prices. Thus, investing in clean energy can lead to significant economic benefits."/>
+          <div class="overlay"><p><h2>Economic Greening</h2><br><br><br>Click For Details</p></div>
+        </div>
+        <!-- Thumbnail 8 -->
+        <div class="thumbnail" onclick="expandThumbnail(this)">
+          <img src="Source files/gallery/logo9.jpg" alt="Image 9" tabindex="0" data-description="The image depicts a journey of clean energy from its present state to the future. It starts with a small plant, symbolizing the nascent stage of clean energy initiatives. A light bulb indicates the idea and innovation phase, followed by a wind turbine representing the implementation of sustainable energy solutions that are currently in use. The upward trajectory of the line suggests a positive future outlook for clean energy development, with the potential for more advanced and efficient technologies. This image underscores the significant potential of clean energy in transforming our energy systems towards sustainability and reducing environmental impact."/>
+          <div class="overlay"><p><h2>Clean Energy Evolution</h2><br><br><br>Click For Details</p></div>
+        </div>
+      </div>
+
+      <!-- Expanded view of thumbnails -->
+      <div id="expandedView" class="expandedView">
+        <span class="closeBtn" onclick="closeExpandedView()">×</span>
+        <!-- Buttons for changing background color -->
+        <div class="buttons-container">
+          <button onclick="handleButtonClick(1)" class="bttn bttn-1">Dark</button>
+          <button onclick="handleButtonClick(2)" class="bttn bttn-2">Gray</button>
+          <button onclick="handleButtonClick(3)" class="bttn bttn-3">Random</button>
+        </div>
+        <!-- Dropdown for selecting font -->
+        <div class="dropdown-container">
+          <select class="fontSelector">
+            <option value="arial">Arial</option>
+            <option value="timesnewroman" selected>Times New Roman</option>
+            <option value="verdana">Verdana</option>
+          </select>
+        </div>
+        <!-- Expanded image and its description -->
+        <img id="expandedImg" src="" alt="" tabindex="0" />
+        <div id="description" class="description"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="Source files/gallery/Web Gallery.js"></script>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Footer navigation -->
+      <div class="footer-social">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+      <!-- Footer text -->
+      <div class="footer-text">
+        <p>This website was created by <a href="nethmika-Page Editor.html">Nethmika Gimhana</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

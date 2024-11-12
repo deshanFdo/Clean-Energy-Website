@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Source files/profile/styles.css">
+    <link rel="stylesheet" href="Source files/profile/navigation.css">
+    <link rel="stylesheet" href="Source files/profile/footer.css">
+    <script src="Source files/profile/user_profile.js" defer></script>
+</head>
+<body>
+    <header>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link rel="stylesheet" href="Source files/sitemap/navigation.css">
+        <div class="navbar">
+            <div class="logo-section">
+                <div class="logo">
+                    <a href="home.html"><img src="Source files/deshan/images/desktop-logo.png" alt="Desktop Logo" class="desktop-logo"></a>
+                </div>
+            </div>
+            <div class="menu-section">
+                <div class="menu">
+                    <a href="home.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="sitemap.html">Sitemap</a>
+                    <a href="team.html">Team</a>
+                    <a href="profile.html" class="active"><i class="fas fa-user-circle"></i> Profile</a>
+                </div>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <div id="main-container">
+        <div id="user-profile">
+            <div id="category-div"></div>
+            <div id="prompt-and-input-container">
+                <div id="prompt-label">Prompt</div>
+                <div id="profile-prompts">
+                </div>
+            </div>
+            <div id="next-skip-button-container">
+                <!-- Next and Skip buttons will be dynamically inserted here -->
+            </div>
+        </div>
+        <div id="progress-container">
+            <div id="progress-info">
+                <span id="progress-text">0%</span>
+                <span id="profile-completed">Profile Completed</span>
+            </div>
+            <div id="progress">
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+        <div id="skipped-prompts-container">
+            <!-- Skipped prompts list will be dynamically created here -->
+        </div>        
+        <!-- The profile-content div will be dynamically created here -->
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-text">
+                <p>This website was created by <a href="Thihan-page_editor.html">Thihan Ranwella</a>.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
